@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { RiMenu3Line, RiCloseLin } from 'react-icons/ri';
+import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logo.svg';
 import './navbar.css';
 
@@ -38,7 +38,11 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
-            <Menu />
+              <Menu />
+              <div className="gpt3__navbar-menu_container-links-sign">
+                <p>Sign in</p>
+                <button type="button">Sign up</button>
+              </div>
             </div>
           </div>
         )}
